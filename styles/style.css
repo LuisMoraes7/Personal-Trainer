@@ -65,8 +65,8 @@ main{
 }
 
 @media (max-width: 768px) {
-    section{
-        height: 200vh;
+    main{
+        height: 110vh;
     }
     article#services{
         & ul{
