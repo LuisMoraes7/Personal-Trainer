@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    background-image: url('../images/barras.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    & p{
+        color: #F6EF56;
+        font-weight: light;
+        text-shadow: -11px 5px 5px black;
+        transition: 0.5s;
+        &:hover{
+            transform: translateY(-3px);
+        }
+    }
+    
+    & section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        & p#identify{
+            position: absolute;
+            top: 0;
+        }
+        & button{
+            font-family: "Poppins";
+            cursor: pointer;
+            width: 150px;
+            padding: 12px;
+            background-color: #F6EF56;
+            border: none;
+            border-radius: 5px;
+            transition: 0.5s;
+            &:hover{
+                background-color: #bbb541;
+                transform: translateY(-3px);
+            }
+            
+         }
+    }
+}
+
+
+@keyframes arrowDown {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+    
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: -50px;
+    color: white;
+    & span{
+        align-self: center;
+        animation: arrowDown 0.5s ease-in-out infinite;
+        animation-direction: alternate;
+        transition: 1s;
+        
+    }
+}
+
+
+article#whoAmI{
+    box-shadow: 15px 1px 1px black;
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgb(136, 135, 135);
+    height: 700px;
+    & img{
+        border-radius: 100%;
+        object-fit: cover;
+        width: 220px;
+        border: none;
+        height: 220px;
+    }
+
+
+
+}
+
+span#whoAmIArrow{
+    margin-top: 50px;
+    font-size: 6rem;
+    
+}
+
+.arrowmove{
+    animation: arrowDown 0.7s ease-in-out infinite;
+    animation-direction: alternate;
+    transition: 1s;
+    
+}
+
+
+article#services{
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    list-style: decimal;
+    padding-bottom: 50px;
+    
+    & img{
+        height: 250px;
+        width: 98vw;
+        
+        border-radius: 8px;
+        margin-top: 40px;
+        
+        background-image: url('../images/atividades_fisicas.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    
+}
+
+@media (min-width: 800px) {
+    article#services{
+        & img{
+            width: 80vw;
+            display: block;
+            margin: 40px auto;
+            background-position: left bottom;
+        }
+    }
+}
+h1{
+    margin-bottom: 25px;
+    text-align: center;
+}
+ul{
+    margin: 0 40px;
+    text-align: justify;
+}
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+::-webkit-scrollbar-track {
+    background: black; /* Cor da área de rastreamento */
+}
+::-webkit-scrollbar-thumb {
+    background-color: blue; /* Cor do polegar da rolagem */
+    
+    border-radius: 20px; /* Arredondamento do polegar da rolagem */
+}
+
+article#whyChoose{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: #C2C5BB;
+    color: blue;
+    & img{
+        height: 250px;
+        width: 98vw;
+        
+        border-radius: 8px;
+        margin-top: 25px;
+        background-image: url('../images/atividade2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 800px) {
+    article#whyChoose{
+        & img{
+            width: 80vw;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+article#assessments{
+    padding-top: 40px;
+    background-color: white;
+    text-align: center;
+    & h3{
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+
+    & i{
+        font-weight: lighter;
+    }
+
+    & li{
+        margin-bottom: 14px;
+        list-style: none;
+        background-color: lightgray;
+    }
+}
+
+article#howWork{
+    padding-top: 40px;
+    background-color: #77B28C;
+    text-align: center;
+    & h4{
+        margin-top: 50px;
+        margin-bottom: -70px;
+    }
+}
+
+article#contact{
+    
+    background-color: #157A6E;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer{
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
