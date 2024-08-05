@@ -131,13 +131,12 @@ article#services{
     text-align: center;
     background-color: rgb(43, 41, 41);
     color: white;
-    list-style: decimal;
+    
     padding-bottom: 50px;
     
     & img{
         height: 250px;
         width: 98vw;
-        
         border-radius: 8px;
         margin-top: 40px;
         
@@ -157,6 +156,8 @@ article#services{
             margin: 40px auto;
             background-position: left bottom;
         }
+
+        
     }
 }
 h1{
@@ -202,7 +203,25 @@ article#whyChoose{
         & img{
             width: 80vw;
             display: block;
-            margin: 0 auto;
+            margin: 40px auto;
+            
+        }
+    }
+}
+
+@media (min-width: 1092px) {
+    article#whyChoose{
+        & img{
+            background-size: contain;
+            width: 30vw;
+        }
+    }
+    article#services{
+        & img{
+            
+            
+            width: 30vw;
+            
         }
     }
 }
