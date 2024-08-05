@@ -64,6 +64,17 @@ main{
     }
 }
 
+@media (max-width: 768px) {
+    section{
+        height: 200vh;
+    }
+    article#services{
+        & ul{
+            text-align: center;
+        }
+    }
+    
+}
 
 @keyframes arrowDown {
     0%{
@@ -139,7 +150,9 @@ article#services{
     color: white;
     
     padding-bottom: 50px;
-    
+    & ul{
+        text-align: justify;
+    }
     & img{
         height: 250px;
         width: 98vw;
