@@ -18,6 +18,7 @@ main{
     align-items: center;
     flex-direction: column;
     height: 600px;
+    text-align: center;
     width: 100%;
     background-image: url('../images/barras.jpg');
     background-size: cover;
@@ -40,6 +41,7 @@ main{
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
+        font-weight: bold;
         & p#identify{
             position: absolute;
             top: 0;
@@ -125,6 +127,10 @@ span#whoAmIArrow{
     
 }
 
+ul{
+    font-weight: light;
+    font-size: 0.9rem;
+}
 
 article#services{
     padding-top: 40px;
@@ -145,6 +151,7 @@ article#services{
         background-size: cover;
 
     }
+
     
 }
 
