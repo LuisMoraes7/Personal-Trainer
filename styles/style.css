@@ -17,7 +17,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
     text-align: center;
     width: 100%;
     background-image: url('../images/barras.jpg');
@@ -64,17 +64,6 @@ main{
     }
 }
 
-@media (max-width: 768px) {
-    main{
-        height: 110vh;
-    }
-    article#services{
-        & ul{
-            text-align: center;
-        }
-    }
-    
-}
 
 @keyframes arrowDown {
     0%{
@@ -151,7 +140,7 @@ article#services{
     
     padding-bottom: 50px;
     & ul{
-        text-align: justify;
+        text-align: center;
     }
     & img{
         height: 250px;
