@@ -130,6 +130,8 @@ span#whoAmIArrow{
 ul{
     font-weight: light;
     font-size: 0.9rem;
+    margin: 0 40px;
+    text-align: center;
 }
 
 article#services{
@@ -139,9 +141,7 @@ article#services{
     color: white;
     
     padding-bottom: 50px;
-    & ul{
-        text-align: center;
-    }
+
     & img{
         height: 250px;
         width: 98vw;
@@ -173,10 +173,7 @@ h1{
     margin-bottom: 25px;
     text-align: center;
 }
-ul{
-    margin: 0 40px;
-    text-align: justify;
-}
+
 ::-webkit-scrollbar {
     width: 8px; /* Largura da barra de rolagem */
 }
